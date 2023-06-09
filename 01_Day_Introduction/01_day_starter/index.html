@@ -1,19 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-	<title>30DaysOfJavaScript</title>
-</head>
-
-<body>
-	<h1>30DaysOfJavaScript:03 Day</h1>
-	<h2>Introduction</h2>
-	<button onclick="alert('Welcome to 30DaysOfJavaScript!');">Click Me</button>
-	<script src="./helloworld.js"></script>
-	<script src="./introduction.js"></script>
-	<script src="./variable.js"></script>
-	<script src="./main.js"></script>
-
-</body>
+<script src="https://zh.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+    let calculator = {
+        read() {
+            this.a = +prompt("a?", 0)
+            this.b = +prompt("b?", 0)
+        },
+        sum() {
+            return this.a + this.b;
+        },
+        mul() {
+            return this.a * this.b;
+        }
+    }
+    calculator.read()
+    alert("sum:"+calculator.sum())
+    alert("mul:"+calculator.mul())
+</script>
 
 </html>
